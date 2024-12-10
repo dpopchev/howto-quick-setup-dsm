@@ -65,6 +65,8 @@ has been in the recycle been for more than 3 days. Snapshots should be good enou
 
 Should be work out of box.
 
+### install Storage Analyzer package
+
 ## Security
 
 ### enable security advisor
@@ -126,6 +128,8 @@ Log attempts 10 and block for 5 minutes is sufficient.
 ### fine tune security advisor profile
 
 ### set static IP address
+
+### enable DoS protection
 
 ## Users and groups
 
@@ -196,15 +200,7 @@ Do for *every* shared folder.
 
 ### set 3 hours hdd hibernation
 
-## Control panel
-
-### Fast clone
-
-`File services -> Advanced ` and then select `Fast clone`
-
-### Bypass traverse checking
-
-`File services -> Advanced ` and then select `Enable bypass traverser checking`
+## Synology drive
 
 ## References
 
