@@ -29,17 +29,28 @@ Leave the drive checking, it will take some time.
 
 ### schedule drive tests
 
-`HDD/SSD -> Settings`
-
 - SMART quick test: every month
-- SMART extended test: every three months
+- SMART extended test: every six months
 
 ### install exFAT access package
 
-### install Synology snapshot replication package
+### install Snapshot replication package
 
-Setup up per shared folder. Setting retention period of 28 days would mean that
-delete files will free up the space after 28 days of the deletion.
+Enable snapshot schedule every 2 hours.
+
+Then set a retention policy:
+
+- keep all snapshots for 5 days
+- keep the last snapshot of the day for 30 days
+
+Which means snapshots with granularity of 2 hours for 5 days. After that
+snapshot with granularity of a day for the past 30 days.
+
+This means that a delete file won't be lost for 30 days.
+
+Also make snapshots visible to make it easier to find.
+
+**NOTE** Should setup for every new folder
 
 ### install Hyper backup package
 
@@ -47,10 +58,10 @@ delete files will free up the space after 28 days of the deletion.
 
 `Control Panel -> Task Scheduler -> Create`
 
-Preferably do it every single day for all recycle bins and safe to save the for
-some amount of time, e.g. 7 days. Snapshots should be good enough.
+Preferably do it every single day for all recycle bins and remove anything that
+has been in the recycle been for more than 3 days. Snapshots should be good enough.
 
-### Prefer SMB connection
+### prefer SMB connection
 
 Should be work out of box.
 
@@ -98,9 +109,11 @@ Easier to control policies and permissions and such.
 
 `Security -> Account` under `Adaptive MFA`
 
-### enable IP level auto blocking
+### enable IP level auto block
 
 `Security -> Protection` under `Auto Block`
+
+Log attempts 10 and block for 5 minutes is sufficient.
 
 ### disable unneeded file services
 
@@ -172,6 +185,16 @@ We can download photos from google but without the metadata.
 ### enable datachecksum for advanced technology
 
 Do for *every* shared folder.
+
+## Hardware and Power
+
+### enable restart automatically when power is on
+
+### check out beep control
+
+### cool fan mode
+
+### set 3 hours hdd hibernation
 
 ## Control panel
 
