@@ -93,6 +93,49 @@ Easier to control policies and permissions and such.
 
 ### set static IP address
 
+## Users and groups
+
+## Indexing
+
+`Indexing` set the shared folders and type of files to be indexed.
+
+Prefer not to convert by schedule as of time of writing there is no
+de-duplication app that will take care and clean up of all lower quality copies.
+
+## Multimedia
+
+### install Multimedia Server package
+
+This allows for low level and quick access to certain folders.
+
+We can enable transcoding server side compressing dense and heavy multimedia.
+
+### install Advanced Media Extensions package
+
+Will allow system run certain compressed techniques.
+
+### Audio and Video Station
+
+Skipping
+
+### install Synology Photos package
+
+`Synology Photos` is searching `/photo` as indexed or `/home/Photos`.
+
+Personal space is at `home` and shared space is the shared folder. It needs be
+enabled per user bases or they wont see it using the app.
+
+As of time of writing *unless the options are enabled* the AI won't work:
+
+- Enable the People album in Personal Space
+- Enable the subject shared space...
+
+IMPORTANT: as of time of writing Synology is not using external service.
+
+Going trough the faces we can rename the avatars and merge unknown people.
+
+We can download photos from google but without the metadata.
+
 ## Control panel
 
 ### Fast clone
@@ -116,10 +159,9 @@ Install the service trough `Package manager`.
 
 Can make replication.
 
-
 ## References
 
-- [Synology NAS Compete Build, Setup, RAID, Pools and Volumes (2024 SETUP GUIDE #1) by NASCOMPARE](https://www.youtube.com/watch?v=TDV6uCH-4Ic)
+- [Synology NAS Compete Build, Setup, RAID, Pools and Volumes (2024 SETUP GUIDE <SERIES>) by NASCOMPARE](https://www.youtube.com/watch?v=TDV6uCH-4Ic)
 - [COMPLETE BEGINNER’S GUIDE for Synology NAS - 2023 DSM 7.2 by SpaceRex](https://www.youtube.com/watch?v=T1xW97eyXB8)
 - [How to Setup a Synology NAS for the first time in DSM 7 (Complete Guide for 2021+) by SpaceRex](https://www.youtube.com/watch?v=oWujGFVATiI)
 - [Synology NAS Setup & Configuration Guide! by WunderTech](https://www.wundertech.net/synology-nas-initial-setup-ultimate-guide/)
