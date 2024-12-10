@@ -33,37 +33,67 @@ Leave the drive checking, it will take some time.
 - adjust frequency or choose data scrubbing specific period
 - select to run it later, as it is a new install
 
+## Security
+
+### enable security advisor
+
+Will check out the sane and recommended by Synology configurations.
+
+### disable default admin user
+
+Common vector of attack.
+
+### disable ssh
+
+Common vector of attack, notably because only the admin users can use it.
+
+### enable automatic updates for system
+
+### enable automatic updates for services
+
+### change the default ports
+
+`Control Panel -> Login Portal`
+
+### group users into groups
+
+Easier to control policies and permissions and such.
+
+### allow 2 factor authentication
+
+### disable enhancing browser compatibility by skipping IP checking
+
+`Security -> Security` under `General`
+
+### set logout timer
+
+`Security -> Security` under `Login Setitings`
+
+### enable account protection
+
+`Security -> Account` under `Account protection` should be enabled.
+
+### enable adaptive MFA
+
+`Security -> Account` under `Adaptive MFA`
+
+### enable IP level auto blocking
+
+`Security -> Protection` under `Auto Block`
+
+### disable unneeded file services
+
+`File Services -> *` whatever service is not desired
+
+### permission viewer provides one in place overview
+
+`Permission viewer`
+
+### fine tune security advisor profile
+
+### set static IP address
+
 ## Control panel
-
-### Static IP address
-
-`Network -> Network interfaces`
-
-Edit and put address that is outside the DHCP scope.
-
-Alternatively do it trough the router.
-
-### Basic security
-
-`Security -> Security` check most with exception of *Enhance browser compatibility...*
-
-### Enable account protection
-
-`Security -> Account` the `Account protection` tab is selected.
-
-### Enable auto block and DoS
-
-`Security -> Protection`
-
-### Create shared folder
-
-`Shared folder -> Create`
-
-### Add users
-
-`Users and groups -> User -> Create`
-
-Be cautious of adding an user into admin group.
 
 ### Fast clone
 
@@ -89,8 +119,7 @@ Can make replication.
 
 ## References
 
-- [Complete Synology NAS Setup Guide (Zero to Hero) by Tech Me Out](https://www.youtube.com/watch?v=Clr04THD49g)
+- [Synology NAS Compete Build, Setup, RAID, Pools and Volumes (2024 SETUP GUIDE #1) by NASCOMPARE](https://www.youtube.com/watch?v=TDV6uCH-4Ic)
 - [COMPLETE BEGINNER’S GUIDE for Synology NAS - 2023 DSM 7.2 by SpaceRex](https://www.youtube.com/watch?v=T1xW97eyXB8)
 - [How to Setup a Synology NAS for the first time in DSM 7 (Complete Guide for 2021+) by SpaceRex](https://www.youtube.com/watch?v=oWujGFVATiI)
 - [Synology NAS Setup & Configuration Guide! by WunderTech](https://www.wundertech.net/synology-nas-initial-setup-ultimate-guide/)
-- [Synology NAS Compete Build, Setup, RAID, Pools and Volumes (2024 SETUP GUIDE #1) by NASCOMPARE](https://www.youtube.com/watch?v=TDV6uCH-4Ic)
