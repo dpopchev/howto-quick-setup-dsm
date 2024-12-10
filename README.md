@@ -8,30 +8,51 @@ use. References included at the end. The guide is based on `DSM-7.2`.
 Follow the install instructions after locating the attached NAS on the same
 network using [finds.synology.com](http://find.synology.com/).
 
-## Storage manager
+## Storage
 
-### Make volume
+### keep copy of old data around
+
+HDD are most likely to die either in the first few weeks and last for very long
+time most likely. *resource needed*
+
+### make volume
 
 You should be greeted with prompt, do as you see wish or flow with the
-defaults.
+defaults. If missing the wizard use the `Storage manager`.
 
 Leave the drive checking, it will take some time.
 
-### Schedule drive tests
+### schedule scrubbing pools
+
+- make it every three months
+- select to run it later, as it is a new install
+
+### schedule drive tests
 
 `HDD/SSD -> Settings`
 
 - SMART quick test: every month
 - SMART extended test: every three months
 
-### Schedule scrubbing
+### install exFAT access package
 
-`Storage -> Storage Pool N -> Volume K -> Schedule Data scrubbing`
+### install Synology snapshot replication package
 
-- enable data scrubbing
-- select storage pools
-- adjust frequency or choose data scrubbing specific period
-- select to run it later, as it is a new install
+Setup up per shared folder. Setting retention period of 28 days would mean that
+delete files will free up the space after 28 days of the deletion.
+
+### install Hyper backup package
+
+### schedule empty recycle bin tasks
+
+`Control Panel -> Task Scheduler -> Create`
+
+Preferably do it every single day for all recycle bins and safe to save the for
+some amount of time, e.g. 7 days. Snapshots should be good enough.
+
+### Prefer SMB connection
+
+Should be work out of box.
 
 ## Security
 
@@ -95,6 +116,16 @@ Easier to control policies and permissions and such.
 
 ## Users and groups
 
+### enable user home service
+
+### create group
+
+Better to attach password settings to groups.
+
+### create user
+
+Better attach to group.
+
 ## Indexing
 
 `Indexing` set the shared folders and type of files to be indexed.
@@ -136,6 +167,12 @@ Going trough the faces we can rename the avatars and merge unknown people.
 
 We can download photos from google but without the metadata.
 
+## Shared folders
+
+### enable datachecksum for advanced technology
+
+Do for *every* shared folder.
+
 ## Control panel
 
 ### Fast clone
@@ -145,19 +182,6 @@ We can download photos from google but without the metadata.
 ### Bypass traverse checking
 
 `File services -> Advanced ` and then select `Enable bypass traverser checking`
-
-## Snapshot replication
-
-Install the service trough `Package manager`.
-
-### Schedule snapshot replication
-
-`Snapshots -> Settings -> Schedule`
-
-- daily at night
-- 7 days retention policy
-
-Can make replication.
 
 ## References
 
