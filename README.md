@@ -65,7 +65,13 @@ has been in the recycle been for more than 3 days. Snapshots should be good enou
 
 Should be work out of box.
 
+SMB2 or higher.
+
+Disable NLTMv1 authentication.
+
 ### install Storage Analyzer package
+
+### disable afp
 
 ## Security
 
@@ -190,6 +196,10 @@ We can download photos from google but without the metadata.
 
 Do for *every* shared folder.
 
+### enable recycle bin
+
+But do not forget to schedule the empting of those.
+
 ## Hardware and Power
 
 ### enable restart automatically when power is on
@@ -208,3 +218,4 @@ Do for *every* shared folder.
 - [How to Setup a Synology NAS for the first time in DSM 7 (Complete Guide for 2021+) by SpaceRex](https://www.youtube.com/watch?v=oWujGFVATiI)
 - [COMPLETE BEGINNER’S GUIDE for Synology NAS - 2023 DSM 7.2 by SpaceRex](https://www.youtube.com/watch?v=T1xW97eyXB8)
 - [Synology NAS Setup & Configuration Guide! by WunderTech](https://www.wundertech.net/synology-nas-initial-setup-ultimate-guide/)
+- [ Simple Synology Settings EVERYONE should be using (Basics) by SpaceRex](https://www.youtube.com/watch?v=GL11Tq_W6FE)
