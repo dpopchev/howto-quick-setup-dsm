@@ -212,6 +212,27 @@ But do not forget to schedule the empting of those.
 
 ## Synology drive
 
+- [recover trough pc](https://kb.synology.com/vi-vn/DSM/tutorial/How_can_I_recover_data_from_my_DiskStation_using_a_PC)
+- [more realistic tutorial](https://zarino.co.uk/post/synology-shr-raid-1-ubuntu/)
+
+The gist:
+```
+root@pop-os:~# mdadm -AsfR && vgchange -ay
+mdadm: No arrays found in config file or automatically
+
+lsblk
+# md0 is aritrary; sdb5 is the lsblk one holing logical volume
+mdadm --assemble --run /dev/md0 /dev/sdb5 --force
+# whe busy: mdadm --stop --scan
+lvscan
+vgchange -ay vg1000 # activiate volume
+mount /dev/vg1000/lv /mnt/hd1 -o ro
+# when finish
+umount /mnt/hd1
+vgchange -an vg1000
+mdadm --stop /dev/md0
+```
+
 ## References
 
 - [Synology NAS Compete Build, Setup, RAID, Pools and Volumes (2024 SETUP GUIDE <SERIES>) by NASCOMPARE](https://www.youtube.com/watch?v=TDV6uCH-4Ic)
