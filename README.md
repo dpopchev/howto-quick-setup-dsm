@@ -210,7 +210,7 @@ But do not forget to schedule the empting of those.
 
 ### set 3 hours hdd hibernation
 
-## Synology drive
+## HDD recovery
 
 - [recover trough pc](https://kb.synology.com/vi-vn/DSM/tutorial/How_can_I_recover_data_from_my_DiskStation_using_a_PC)
 - [more realistic tutorial](https://zarino.co.uk/post/synology-shr-raid-1-ubuntu/)
