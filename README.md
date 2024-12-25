@@ -144,6 +144,14 @@ Rules of thumb:
 - **enable** adaptive MFA
 - advisable to **enable** 2-factor authentication
 
+### disable firewall
+
+`Control Panel -> Security -> Firewall`
+
+Rules of thumb:
+
+- advisable to leave disabled unless more complicated configuration is needed
+
 ### enable security advisor
 
 Will check out the sane and recommended by Synology configurations.
