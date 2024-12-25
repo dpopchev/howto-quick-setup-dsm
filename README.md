@@ -77,6 +77,15 @@ Disable NLTMv1 authentication.
 
 ## Security
 
+### enable auto block
+
+`Control Panel -> Security -> Protection -> Auto Block`
+
+Rule of thumbs:
+
+- Log attempts 10
+- block for 5 minutes
+
 ### enable security advisor
 
 Will check out the sane and recommended by Synology configurations.
@@ -118,12 +127,6 @@ Easier to control policies and permissions and such.
 ### enable adaptive MFA
 
 `Security -> Account` under `Adaptive MFA`
-
-### enable IP level auto block
-
-`Security -> Protection` under `Auto Block`
-
-Log attempts 10 and block for 5 minutes is sufficient.
 
 ### disable unneeded file services
 
