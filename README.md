@@ -54,12 +54,15 @@ Rules of thumb:
 
 ### install Snapshot Replication package
 
+`Snapshot replicatoin -> Snapshots`
+
 Rules of thumb:
 
 - **note** should be enabled on every newly created shared folder
 - enable snapshot per shared folder every 2 hours
 - retain all snapshots for 7 days
 - retain last day snapshot for 30 days
+- make the snapshots visible
 - **note** that retain policies will constrain how quickly spaces gained back,
 e.g. 30 days after deletion
 
@@ -153,11 +156,17 @@ Rules of thumb:
 
 - advisable to leave disabled unless more complicated configuration is needed
 
+### enable automatic updates for system
+
+`Control Panel -> Updates & Restore -> DSM Update`
+
+Rules of thumb:
+
+- **enable** automatic install of important updates
+
 ### enable security advisor
 
 Will check out the sane and recommended by Synology configurations.
-
-### enable automatic updates for system
 
 ### enable automatic updates for services
 
