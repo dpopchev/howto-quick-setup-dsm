@@ -126,6 +126,7 @@ Rules of thumb:
 Rules of thumb:
 
 - **disable** the account named "admin"
+- good idea is to generate a random secure password
 
 ### disable ssh
 
