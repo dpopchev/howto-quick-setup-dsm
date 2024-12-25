@@ -127,13 +127,17 @@ Rules of thumb:
 
 - **disable** the account named "admin"
 
+### disable ssh
+
+`Control Panel -> Terminal & SNMP`
+
+Rules of thumb:
+
+- **disable** leave close unless needed
+
 ### enable security advisor
 
 Will check out the sane and recommended by Synology configurations.
-
-### disable ssh
-
-Common vector of attack, notably because only the admin users can use it.
 
 ### enable automatic updates for system
 
