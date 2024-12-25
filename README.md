@@ -101,13 +101,17 @@ Rules of thumb:
 
 - **disable** do not use as Apple has deprecated it
 
+### disable default admin user
+
+`Control Panel -> User &  Group`
+
+Rules of thumb:
+
+- **disable** the account named "admin"
+
 ### enable security advisor
 
 Will check out the sane and recommended by Synology configurations.
-
-### disable default admin user
-
-Common vector of attack.
 
 ### disable ssh
 
