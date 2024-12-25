@@ -103,6 +103,14 @@ Rules of thumb:
 
 - **disable** as Apple has deprecated it
 
+### disable NFS
+
+`Control Panel -> File Sevices -> AFP`
+
+Rules of thumb:
+
+- **disable** as it uses IP, bot user, authentication
+
 ### disable default admin user
 
 `Control Panel -> User &  Group`
