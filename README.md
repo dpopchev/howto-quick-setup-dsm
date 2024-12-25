@@ -111,6 +111,14 @@ Rules of thumb:
 
 - **disable** as it uses IP, bot user, authentication
 
+### disable FTP
+
+`Control Panel -> File Sevices -> AFP`
+
+Rules of thumb:
+
+- **disable** unless needed
+
 ### disable default admin user
 
 `Control Panel -> User &  Group`
