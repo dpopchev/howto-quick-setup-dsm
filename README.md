@@ -73,8 +73,6 @@ Also make snapshots visible to make it easier to find.
 
 ### install Storage Analyzer package
 
-### disable afp
-
 ## Security
 
 ### enable auto block
@@ -94,6 +92,14 @@ Rules of thumb:
 
 - **do not** use SMB1 as there is security vulnerability
 - **disable** `NLTMv1`
+
+### disable AFP
+
+`Control Panel -> File Sevices -> AFP`
+
+Rules of thumb:
+
+- **disable** do not use as Apple has deprecated it
 
 ### enable security advisor
 
