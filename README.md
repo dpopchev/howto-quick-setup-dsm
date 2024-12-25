@@ -105,7 +105,7 @@ Rules of thumb:
 
 ### disable NFS
 
-`Control Panel -> File Sevices -> AFP`
+`Control Panel -> File Sevices -> NFS`
 
 Rules of thumb:
 
@@ -113,7 +113,7 @@ Rules of thumb:
 
 ### disable FTP
 
-`Control Panel -> File Sevices -> AFP`
+`Control Panel -> File Sevices -> FTP`
 
 Rules of thumb:
 
