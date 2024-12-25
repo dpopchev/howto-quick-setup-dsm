@@ -28,6 +28,15 @@ Rules of thumb:
 - SMART quick test: every month
 - SMART extended test: every six months
 
+### schedule pool scrubbing
+
+`Storage Manager -> Storage -> Pool -> Schedule Data Scrubbing`
+
+Rules of thumb:
+
+- make it every three months
+- select to run it later, as it is a new install
+
 ### keep copy of old data around
 
 HDD are most likely to die either in the first few weeks and last for very long
@@ -39,11 +48,6 @@ You should be greeted with prompt, do as you see wish or flow with the
 defaults. If missing the wizard use the `Storage manager`.
 
 Leave the drive checking, it will take some time.
-
-### schedule scrubbing pools
-
-- make it every three months
-- select to run it later, as it is a new install
 
 ### install exFAT access package
 
