@@ -101,7 +101,7 @@ Rules of thumb:
 
 Rules of thumb:
 
-- **disable** do not use as Apple has deprecated it
+- **disable** as Apple has deprecated it
 
 ### disable default admin user
 
