@@ -10,6 +10,15 @@ network using [finds.synology.com](http://find.synology.com/).
 
 ## Storage
 
+### schedule task to empty recycle bin
+
+`Control Panel -> Task Scheduler -> Create`
+
+Rules of thumb:
+
+- empty bins every single night
+- setup retention policy of 7 days
+
 ### keep copy of old data around
 
 HDD are most likely to die either in the first few weeks and last for very long
@@ -53,13 +62,6 @@ Also make snapshots visible to make it easier to find.
 **NOTE** Should setup for every new folder
 
 ### install Hyper backup package
-
-### schedule empty recycle bin tasks
-
-`Control Panel -> Task Scheduler -> Create`
-
-Preferably do it every single day for all recycle bins and remove anything that
-has been in the recycle been for more than 3 days. Snapshots should be good enough.
 
 ### prefer SMB connection
 
