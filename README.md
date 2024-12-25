@@ -71,14 +71,6 @@ Also make snapshots visible to make it easier to find.
 
 ### install Hyper backup package
 
-### prefer SMB connection
-
-Should be work out of box.
-
-SMB2 or higher.
-
-Disable NLTMv1 authentication.
-
 ### install Storage Analyzer package
 
 ### disable afp
@@ -93,6 +85,15 @@ Rule of thumbs:
 
 - Log attempts 10
 - block for 5 minutes
+
+### SMB settings
+
+`Control Panel -> File Services -> SMB -> Advanced settings`
+
+Rules of thumb:
+
+- **do not** use SMB1 as there is security vulnerability
+- **disable** `NLTMv1`
 
 ### enable security advisor
 
