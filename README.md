@@ -1,7 +1,7 @@
 # Synology DiskStation Manager
 
-Notes howto setup an Synology NAS running `DiskStation` version `7.2`. Find
-references at the end.
+Rules of thumb about configuring an Synology NAS running `DiskStation` version
+`7.2`. Find references at the end.
 
 ## Install
 
