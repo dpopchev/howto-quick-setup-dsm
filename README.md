@@ -39,39 +39,41 @@ Rules of thumb:
 
 ### keep copy of old data around
 
-HDD are most likely to die either in the first few weeks and last for very long
-time most likely. *resource needed*
+Rules of thumb:
 
-### make volume
-
-You should be greeted with prompt, do as you see wish or flow with the
-defaults. If missing the wizard use the `Storage manager`.
-
-Leave the drive checking, it will take some time.
+- keep old data around, ideally do a backup using `Hyper Backup`
+- new HDDs either likely die in first few weeks or then likely last for long time
+- it is not uncommon for HDDs in the same series to share same defect
 
 ### install exFAT access package
 
-### install Snapshot replication package
+Rules of thumb:
 
-Enable snapshot schedule every 2 hours.
+- file system that all OS can read
+- suitable to make external HDD and `Hyper Backup` important data
 
-Then set a retention policy:
+### install Snapshot Replication package
 
-- keep all snapshots for 5 days
-- keep the last snapshot of the day for 30 days
+Rules of thumb:
 
-Which means snapshots with granularity of 2 hours for 5 days. After that
-snapshot with granularity of a day for the past 30 days.
+- **note** should be enabled on every newly created shared folder
+- enable snapshot per shared folder every 2 hours
+- retain all snapshots for 7 days
+- retain last day snapshot for 30 days
+- **note** that retain policies will constrain how quickly spaces gained back,
+e.g. 30 days after deletion
 
-This means that a delete file won't be lost for 30 days.
+### install Hyper Backup package
 
-Also make snapshots visible to make it easier to find.
+Rules of thumb:
 
-**NOTE** Should setup for every new folder
-
-### install Hyper backup package
+- schedule backup per shared folder or package and to other NAS or external drive
 
 ### install Storage Analyzer package
+
+Rules of thumb:
+
+- run reports to catch duplication files
 
 ## Security
 
