@@ -1,9 +1,9 @@
 # Synology DiskStation Manager
 
-Notes of best practices found around to setup a Synology NAS for home
-use. References included at the end. The guide is based on `DSM-7.2`.
+Notes howto setup an Synology NAS running `DiskStation` version `7.2`. Find
+references at the end.
 
-## Initial setup
+## Install
 
 Follow the install instructions after locating the attached NAS on the same
 network using [finds.synology.com](http://find.synology.com/).
