@@ -19,6 +19,15 @@ Rules of thumb:
 - empty bins every single night
 - setup retention policy of 7 days
 
+### schedule SMART HDD tests
+
+`Storage Manager -> HDD/SDD -> Task Scheduler`
+
+Rules of thumb:
+
+- SMART quick test: every month
+- SMART extended test: every six months
+
 ### keep copy of old data around
 
 HDD are most likely to die either in the first few weeks and last for very long
@@ -35,11 +44,6 @@ Leave the drive checking, it will take some time.
 
 - make it every three months
 - select to run it later, as it is a new install
-
-### schedule drive tests
-
-- SMART quick test: every month
-- SMART extended test: every six months
 
 ### install exFAT access package
 
