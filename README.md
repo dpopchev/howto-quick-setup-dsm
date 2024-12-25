@@ -224,7 +224,15 @@ Do for *every* shared folder.
 
 But do not forget to schedule the empting of those.
 
-## Hardware and Power
+## General
+
+### enable power recovery
+
+`Control Panel -> Hardware & Power -> General -> Power Recovery`
+
+Rules of thumb:
+
+- restart automatically when power is on
 
 ### enable restart automatically when power is on
 
