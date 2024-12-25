@@ -135,6 +135,15 @@ Rules of thumb:
 
 - **disable** leave close unless needed
 
+### enable adaptive MFA
+
+`Control Panel -> Security -> Account`
+
+Rules of thumb:
+
+- **enable** adaptive MFA
+- advisable to **enable** 2-factor authentication
+
 ### enable security advisor
 
 Will check out the sane and recommended by Synology configurations.
@@ -164,10 +173,6 @@ Easier to control policies and permissions and such.
 ### enable account protection
 
 `Security -> Account` under `Account protection` should be enabled.
-
-### enable adaptive MFA
-
-`Security -> Account` under `Adaptive MFA`
 
 ### disable unneeded file services
 
