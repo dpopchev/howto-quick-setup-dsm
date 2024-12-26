@@ -270,6 +270,13 @@ Rules of thumb:
 - **enable** using the wizard
 - it can be checked only on creating the folder
 
+### enable recycle bin
+
+Rules of thumb:
+
+- **enable** using the wizard
+- **do not forget** to schedule empty bin task
+
 ## General
 
 ### enable power recovery
