@@ -261,13 +261,14 @@ We can download photos from google but without the metadata.
 
 ## Shared folders
 
-### enable datachecksum for advanced technology
+### enable data checksum
 
-Do for *every* shared folder.
+`Control Panel -> Shared Folder -> Create`
 
-### enable recycle bin
+Rules of thumb:
 
-But do not forget to schedule the empting of those.
+- **enable** using the wizard
+- it can be checked only on creating the folder
 
 ## General
 
