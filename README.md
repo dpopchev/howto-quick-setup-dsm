@@ -297,11 +297,20 @@ Rules of thumb:
 
 ### beep control
 
-`Control Panel -> Hardware & Power -> General -> Power Recovery`
+`Control Panel -> Hardware & Power -> General -> Beep control`
+
+Rules of thumb:
+
+- know why the NAS beeps
+- control whether you want it to beep
 
 ### cool fan mode
 
-`Control Panel -> Hardware & Power -> General -> Power Recovery`
+`Control Panel -> Hardware & Power -> General -> Fan Speed Mode`
+
+Rules of thumb:
+
+- `Cool mode` should be fine
 
 ### set 3 hours hdd hibernation
 
