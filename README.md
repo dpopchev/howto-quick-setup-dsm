@@ -280,7 +280,13 @@ Rules of thumb:
 
 - restart automatically when power is on
 
-### enable restart automatically when power is on
+### enable resource usage history
+
+`Resource Monitor -> Settings`
+
+Rules of thumb:
+
+- **enable** usage history
 
 ### check out beep control
 
