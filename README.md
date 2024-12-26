@@ -312,9 +312,15 @@ Rules of thumb:
 
 - `Cool mode` should be fine
 
-### set 3 hours hdd hibernation
+### HDD hibernation
 
-`Control Panel -> Hardware & Power -> General -> Power Recovery`
+`Control Panel -> Hardware & Power -> HDD hibernation`
+
+Rules of thumb:
+
+- Constant start-stop HDD spinning will shorten the HDD life
+- If the NAS is used daily uncheck the advanced hibernation
+- Set around 2-3 hours
 
 ## HDD recovery
 
