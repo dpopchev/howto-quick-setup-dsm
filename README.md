@@ -288,11 +288,17 @@ Rules of thumb:
 
 - **enable** usage history
 
-### check out beep control
+### beep control
+
+`Control Panel -> Hardware & Power -> General -> Power Recovery`
 
 ### cool fan mode
 
+`Control Panel -> Hardware & Power -> General -> Power Recovery`
+
 ### set 3 hours hdd hibernation
+
+`Control Panel -> Hardware & Power -> General -> Power Recovery`
 
 ## HDD recovery
 
