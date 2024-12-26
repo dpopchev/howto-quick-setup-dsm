@@ -170,39 +170,27 @@ Will check out the sane and recommended by Synology configurations.
 
 ### enable automatic updates for services
 
-### change the default ports
+`Package Manager -> Settings`
 
-`Control Panel -> Login Portal`
+Rules of thumb:
 
-### group users into groups
-
-Easier to control policies and permissions and such.
-
-### allow 2 factor authentication
+- **enable** automatic install of important updates
 
 ### disable enhancing browser compatibility by skipping IP checking
 
-`Security -> Security` under `General`
+`Control Panel -> Security -> Security -> General`
 
 ### set logout timer
 
-`Security -> Security` under `Login Setitings`
+`Control Panel -> Security -> Security -> Login Settings`
 
 ### enable account protection
 
-`Security -> Account` under `Account protection` should be enabled.
-
-### disable unneeded file services
-
-`File Services -> *` whatever service is not desired
+`Control Panel -> Security -> Account -> Account protection`
 
 ### permission viewer provides one in place overview
 
-`Permission viewer`
-
-### fine tune security advisor profile
-
-### set static IP address
+`Control Panel -> Permission viewer`
 
 ### enable DoS protection
 
