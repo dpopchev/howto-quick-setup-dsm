@@ -61,10 +61,11 @@ Rules of thumb:
 - **note** should be enabled on every newly created shared folder
 - enable snapshot per shared folder every 2 hours
 - retain all snapshots for 7 days
-- retain last day snapshot for 30 days
+- retain last day snapshot for 14 days
+- retain last week snapshot for 2 weeks
+- retain last month snapshot for 2 months
 - make the snapshots visible
-- **note** that retain policies will constrain how quickly spaces gained back,
-e.g. 30 days after deletion
+- **note** retain policies will constrain how quickly spaces gained back
 
 ### install Hyper Backup package
 
