@@ -47,17 +47,27 @@ the instructions; then create a storage pool.
 
 Configuration per shared folder.
 
-
 - schedule daily, every 2 hours
-- retain all snapshots for 7 days
-- retain last day snapshot for 14 days
-- retain last week snapshot for 2 weeks
-- retain last month snapshot for 2 months
 - make the snapshots visible
 
+Advanced retain policy:
+
+| last of   | retain period |
+|-----------|---------------|
+| the hour  | 72 hours      |
+| the day   | 7 days        |
+| the week  | 4 weeks       |
+| the month | 3 months      |
+
 **notes**:
+- Number of latest snapshots to keep prevents retention policy deleting all
+snapshots when the system stops taking new snapshots.
+- think as how far back granularity makes sense, e.g. do you care for hour base
+changes of a file that is a moth old, or you care that you have it in that
+state overall?
 - should be enabled on every newly created shared folder
 - retain policies constrain how quickly spaces gained back
+- see "DSM Help" for an example
 
 ### use Hyper Backup package
 
@@ -158,10 +168,6 @@ Will check out the sane and recommended by Synology configurations.
 ### set logout timer
 
 `Control Panel -> Security -> Security -> Login Settings`
-
-### enable account protection
-
-`Control Panel -> Security -> Account -> Account protection`
 
 ### permission viewer provides one in place overview
 
