@@ -125,6 +125,10 @@ Leave closed unless needed
 - **enable** adaptive MFA
 - advisable to **enable** 2-factor authentication
 
+### enable account protection
+
+`Control Panel -> Security -> Account -> Account protection`
+
 ### disable firewall
 
 `Control Panel -> Security -> Firewall`
