@@ -77,7 +77,32 @@ Backup either selected folders or packages.
 
 Reports include duplication files.
 
-## Security
+## Agreeable setup
+
+### disable enhancing browser compatibility by skipping IP checking
+
+`Control Panel -> Security -> Security -> General`
+
+### set logout timer
+
+`Control Panel -> Security -> Security -> Login Settings`
+
+### enable adaptive MFA
+
+`Control Panel -> Security -> Account`
+
+- **enable** adaptive MFA
+- advisable to **enable** 2-factor authentication
+
+### enable account protection
+
+`Control Panel -> Security -> Account -> Account protection`
+
+### disable firewall
+
+`Control Panel -> Security -> Firewall`
+
+Advisable to leave disabled unless more complicated configuration is needed
 
 ### enable auto block
 
@@ -99,19 +124,19 @@ Reports include duplication files.
 
 ### disable AFP
 
-`Control Panel -> File Sevices -> AFP`
+`Control Panel -> File Services -> AFP`
 
 **disable** as Apple has deprecated it
 
 ### disable NFS
 
-`Control Panel -> File Sevices -> NFS`
+`Control Panel -> File Services -> NFS`
 
 **disable** as it uses IP, bot user, authentication
 
 ### disable FTP
 
-`Control Panel -> File Sevices -> FTP`
+`Control Panel -> File Services -> FTP`
 
 **disable** unless needed
 
@@ -128,32 +153,11 @@ Reports include duplication files.
 
 Leave closed unless needed
 
-### enable adaptive MFA
-
-`Control Panel -> Security -> Account`
-
-- **enable** adaptive MFA
-- advisable to **enable** 2-factor authentication
-
-### enable account protection
-
-`Control Panel -> Security -> Account -> Account protection`
-
-### disable firewall
-
-`Control Panel -> Security -> Firewall`
-
-Advisable to leave disabled unless more complicated configuration is needed
-
 ### enable automatic updates for system
 
 `Control Panel -> Updates & Restore -> DSM Update`
 
 **enable** automatic install of important updates
-
-### enable security advisor
-
-Will check out the sane and recommended by Synology configurations.
 
 ### enable automatic updates for services
 
@@ -161,13 +165,9 @@ Will check out the sane and recommended by Synology configurations.
 
 **enable** automatic install of important updates
 
-### disable enhancing browser compatibility by skipping IP checking
+### enable security advisor
 
-`Control Panel -> Security -> Security -> General`
-
-### set logout timer
-
-`Control Panel -> Security -> Security -> Login Settings`
+Will check out the sane and recommended by Synology configurations.
 
 ### permission viewer provides one in place overview
 
@@ -187,6 +187,39 @@ Easier to attach password settings to groups.
 ### create user
 
 Easier attach to group.
+
+### enable power recovery
+
+`Control Panel -> Hardware & Power -> General -> Power Recovery`
+
+- restart automatically when power is on
+
+### enable resource usage history
+
+`Resource Monitor -> Settings`
+
+- **enable** usage history
+
+### beep control
+
+`Control Panel -> Hardware & Power -> General -> Beep control`
+
+- know why the NAS beeps
+- control whether you want it to beep
+
+### cool fan mode
+
+`Control Panel -> Hardware & Power -> General -> Fan Speed Mode`
+
+- `Cool mode` should be fine
+
+### HDD hibernation
+
+`Control Panel -> Hardware & Power -> HDD hibernation`
+
+- Constant start-stop HDD spinning will shorten the HDD life
+- If the NAS is used daily uncheck the advanced hibernation
+- Set around 2-3-4 hours;
 
 ## Indexing
 
@@ -242,41 +275,6 @@ We can download photos from google but without the metadata.
 
 - **enable** using the wizard
 - **do not forget** to schedule empty bin task
-
-## General
-
-### enable power recovery
-
-`Control Panel -> Hardware & Power -> General -> Power Recovery`
-
-- restart automatically when power is on
-
-### enable resource usage history
-
-`Resource Monitor -> Settings`
-
-- **enable** usage history
-
-### beep control
-
-`Control Panel -> Hardware & Power -> General -> Beep control`
-
-- know why the NAS beeps
-- control whether you want it to beep
-
-### cool fan mode
-
-`Control Panel -> Hardware & Power -> General -> Fan Speed Mode`
-
-- `Cool mode` should be fine
-
-### HDD hibernation
-
-`Control Panel -> Hardware & Power -> HDD hibernation`
-
-- Constant start-stop HDD spinning will shorten the HDD life
-- If the NAS is used daily uncheck the advanced hibernation
-- Set around 2-3-4 hours;
 
 ## HDD recovery
 
