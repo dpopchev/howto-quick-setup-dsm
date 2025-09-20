@@ -299,6 +299,92 @@ vgchange -an vg1000
 mdadm --stop /dev/md0
 ```
 
+## Map subdomains to Docker Containers
+
+Easily access NAS-hosted services via friendly subdomains instead of `diskstation.local:port`.
+
+- local only; names accessible only on LAN
+- memorable; replace numbers with easy-to-remember subdomains
+- mixed services; works for both synology packages and docker containers
+
+### set up local DNS
+
+- install `Synology DNS Server` package
+- create a `primary zone`, e.g. `example.lan` pointing to NAS IP
+- add `A` record for `example.lan` pointing to NAS IP; (just leave name empty)
+- add `CNAME` record for `*.example.lan` canonical name `example.lan`; (just put `*` in name)
+
+#### set up resolution via router
+
+Given that that this DNS likely will be the primary server, we want to resolve
+only the local zones and forward all others to routers DNS or google default
+DNS.
+
+Go to `DNS Server -> Resolution`
+
+- enable `Forwrad zones`
+- add routers LAN IP as forwarder; likely `192.168.1.1`
+- apply
+
+NOTE: finding routers IP on Linux `ip route | grep default`
+
+#### choosing a zone name
+
+You can use almost any valid DNS zone name (letters, digits, hyphens), but
+avoid:
+
+- real public TLDs unless owned, e.g. `.com`, `.net`, `.org`, etc
+- `.local` is reserved for mDNS/Bonjur; it resolves by default to the NAS `synologyname.local`;
+  Use only if advanced.
+
+Safer options: `.lan`, `.home`, `.internal`
+
+### configure reverser proxy
+
+Go to `Control panel -> application portal -> reverse proxy`
+
+Add a rule
+
+- **source**: `servicename.example.lan` (port 80 for HTTP or 443 for HTTPS)
+- **destination**: `localhost:1234` where `1234` is the relevant port used in `NAS_IP:1234`
+
+Add one entry for http and another for https, e.g. `servicename http` and
+`servicename https`. They would differ into the protocol and port choice.
+
+Repeat for each service.
+
+### access
+
+**Make sure** the device is using the NAS IP as DNS. Just `https://servicename.example.lan`
+from browser.
+
+#### verify from client
+
+`nslookup servicename.example.lan`
+`dig servicename.example.lan`
+
+If fails check:
+
+- client is using NAS DNS server (network settings)
+- zone and records exist in DNS server
+- forwarders are set if you need internet resolution
+
+#### check http access
+
+`curl -I https://servicename.example.lan [-k]`
+
+`-k` ignores certificate warnings, useful when `https`
+
+If failing check
+
+- `Rverse Proxy` rules spelling,
+- source hostname and port (https vs http with 443 and 80)
+- destination points to the correct internal portal
+
+#### clean dns cache
+
+`sudo systemd-resolve --flush-caches`
+
 ## References
 
 - [Simple Synology Settings EVERYONE should be using (Basics) by SpaceRex](https://www.youtube.com/watch?v=GL11Tq_W6FE)
