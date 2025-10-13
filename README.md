@@ -385,6 +385,34 @@ If failing check
 
 `sudo systemd-resolve --flush-caches`
 
+## Local Docker Registry trough Container Manager
+
+- get the `registry` from Docker Hub
+- run it locally with
+- create reverse proxy, e.g. `registry.example.lan`
+
+To push...
+
+Did not succeed to add my certificate, e.g.
+
+- create local self signed certificate
+- setup `registry.example.lan` to use it
+
+Container Manager after restart failed to recognize the signing authority:
+
+- putting the certificate into `/var/packages/ContainerManager/.../etc/cert`
+- putting the certificate into `/usr/local/share/ca-certificates/extra`
+
+That is why ssh-ed into the NAS and into `/var/packages/ContainerManager/etc/dockerd.json` added
+
+```json
+"insecure-registries": [
+    "registry.example.lan"
+]
+```
+
+Similar changes were done locally to publish into the registry.
+
 ## References
 
 - [Simple Synology Settings EVERYONE should be using (Basics) by SpaceRex](https://www.youtube.com/watch?v=GL11Tq_W6FE)
