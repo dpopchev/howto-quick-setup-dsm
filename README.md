@@ -310,9 +310,9 @@ Easily access NAS-hosted services via friendly subdomains instead of `diskstatio
 ### set up local DNS
 
 - install `Synology DNS Server` package
-- create a `primary zone`, e.g. `example.lan` pointing to NAS IP
-- add `A` record for `example.lan` pointing to NAS IP; (just leave name empty)
-- add `CNAME` record for `*.example.lan` canonical name `example.lan`; (just put `*` in name)
+- create a `primary zone`, e.g. `example.home` pointing to NAS IP
+- add `A` record for `example.home` pointing to NAS IP; (just leave name empty)
+- add `A` record for `*.example.home` canonical name `example.home`; (just put `*` in name)
 
 #### set up resolution via router
 
@@ -345,7 +345,7 @@ Go to `Control panel -> application portal -> reverse proxy`
 
 Add a rule
 
-- **source**: `servicename.example.lan` (port 80 for HTTP or 443 for HTTPS)
+- **source**: `servicename.example.home` (port 80 for HTTP or 443 for HTTPS)
 - **destination**: `localhost:1234` where `1234` is the relevant port used in `NAS_IP:1234`
 
 Add one entry for http and another for https, e.g. `servicename http` and
@@ -355,13 +355,13 @@ Repeat for each service.
 
 ### access
 
-**Make sure** the device is using the NAS IP as DNS. Just `https://servicename.example.lan`
+**Make sure** the device is using the NAS IP as DNS. Just `https://servicename.example.home`
 from browser.
 
 #### verify from client
 
-`nslookup servicename.example.lan`
-`dig servicename.example.lan`
+`nslookup servicename.example.home`
+`dig servicename.example.home`
 
 If fails check:
 
@@ -371,7 +371,7 @@ If fails check:
 
 #### check http access
 
-`curl -I https://servicename.example.lan [-k]`
+`curl -I https://servicename.example.home [-k]`
 
 `-k` ignores certificate warnings, useful when `https`
 
@@ -389,14 +389,14 @@ If failing check
 
 - get the `registry` from Docker Hub
 - run it locally with
-- create reverse proxy, e.g. `registry.example.lan`
+- create reverse proxy, e.g. `registry.example.home`
 
 To push...
 
 Did not succeed to add my certificate, e.g.
 
 - create local self signed certificate
-- setup `registry.example.lan` to use it
+- setup `registry.example.home` to use it
 
 Container Manager after restart failed to recognize the signing authority:
 
@@ -407,7 +407,7 @@ That is why ssh-ed into the NAS and into `/var/packages/ContainerManager/etc/doc
 
 ```json
 "insecure-registries": [
-    "registry.example.lan"
+    "registry.example.home"
 ]
 ```
 
