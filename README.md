@@ -312,7 +312,7 @@ Easily access NAS-hosted services via friendly subdomains instead of `diskstatio
 - install `Synology DNS Server` package
 - create a `primary zone`, e.g. `example.home` pointing to NAS IP
 - add `A` record for `example.home` pointing to NAS IP; (just leave name empty)
-- add `A` record for `*.example.home` canonical name `example.home`; (just put `*` in name)
+- add `A` record for `*.example.home` pointing to NAS IP (just put `*` in name)
 
 #### set up resolution via router
 
